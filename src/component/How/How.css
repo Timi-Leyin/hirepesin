@@ -42,6 +42,10 @@ h3{
 font-size: 1.3rem;
 }
 
+#how .card .svg-inline--fa {
+    width: 3rem;
+    height: 3rem
+}
 
 @media screen and (max-width:440px){
     

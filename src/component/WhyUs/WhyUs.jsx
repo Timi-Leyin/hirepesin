@@ -43,7 +43,7 @@ We use a lot of tools that makes our system almost
 </p>
 </div>
 
-<div className="card"></div>
+
 
 
 

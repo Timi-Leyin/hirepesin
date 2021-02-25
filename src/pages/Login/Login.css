@@ -1,0 +1,174 @@
+#login{
+    position: relative;
+    display: grid;
+    grid-template-columns: 35vw 1fr;
+    min-height: 93vh;
+    width: 100%;
+}
+
+#login .col{
+background: var(--pry-color)    
+}
+#login .google-sign-in{
+    padding: 10px 14px;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-color: transparent;
+    outline: none
+}
+#login .google-sign-in:not(.fab){
+font-family: inherit;
+    font-weight: bold
+}
+#login .google-sign-in:hover{
+transform: scale(0.95)
+}
+#login .col .logo{
+margin: 10px
+}
+
+
+#login #footer{
+    position: absolute;
+    bottom: 0
+}
+
+#login .main-form{
+    position: relative;
+    margin: 10vh 0;
+/*    text-align: center;*/
+}
+
+#login .main-form .logo{
+  margin: 40px 0 20px 0;
+    text-align: center
+}
+#login .main-form .heading{
+  margin: 0 0 20px 0;
+
+}
+
+
+#login .main-form .form-inputs{
+  position: relative;
+    display:grid;
+    margin: 20px auto; 
+    max-width: 400px;
+    flex-wrap: wrap;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+}
+
+
+#login .main-form .form-inputs .input label{
+display: block;
+    font-weight: bold;
+    font-size: 14px;
+   margin: 3px 10px
+}
+
+
+#login .main-form .form-inputs .input input{
+padding: 10px;
+    border-radius: 50px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#login .main-form .form-inputs .input input.streched{
+    width: 370px;
+}
+
+
+
+
+#login .main-form .form-inputs .input input:focus{
+background: #eee;
+        border: 1px solid var(--pry-color);
+
+}
+
+
+#login .submit-input{
+    max-width: 400px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#login .submit-input a{
+   display: block;
+    font-size: 14px;
+    margin: 10px 0
+}
+
+
+#login .submit-input button[type=submit]{
+padding: 10px;
+    width: 200px;
+    font-family: inherit;
+    border-radius: 50px;
+    border-color: transparent;
+    background: var(--pry-color);
+    font-weight: bold;
+    outline: none;
+    transition: 0.34s;
+    
+}
+#login .submit-input button[type=submit]:hover{
+    background: rgba(0,0,0);
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+
+
+
+#login .submit-input button[type=submit]:focus{
+    transform: scale(0.9)
+}
+
+
+@media screen and (max-width:700px){
+    #login .col{
+        display: none;
+        visibility: hidden;
+        opacity: 0
+    }
+    #login .main-form .heading{
+        font-size: 20px
+}
+
+    #login{
+    display: block
+}
+#login .main-form .form-inputs{
+  position: relative;
+    display:flex;
+    flex-direction: column;
+    margin: 20px auto; 
+max-width:100vw;
+    grid-row-gap: 20px;
+justify-content: center;
+    align-items: center;
+}
+
+
+#login .main-form .form-inputs .input label{
+display: block;
+    font-weight: bold;
+    font-size: 14px;
+   margin: 3px 10px
+}
+
+
+#login .main-form .form-inputs .input input,
+    #login .main-form .form-inputs .input input.streched
+{
+width: 80vw;
+    margin:  0 auto
+}
+
+}

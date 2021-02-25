@@ -51,7 +51,7 @@ img{
 .processes
 .process{
     display: flex;
-    margin: 30px 0;
+    margin: 30px ;
 
     align-items: center;
     justify-content: space-between;
@@ -73,7 +73,7 @@ justify-content: center;
 align-items: center;
 
 box-shadow:  0 0 16px rgba(0, 0, 0, 0.176);
-background:#f00;
+background:var(--pry-color);
 }
 
 #process
@@ -88,7 +88,8 @@ align-items: center;
 .processes
 .process
 .info{
-border-left: 3px solid rgb(167, 14, 14);
+border-left: 3px solid var(--dark-color);
+
 padding: 0 30px 0;
 margin: 5px;
 line-height: 1.6;

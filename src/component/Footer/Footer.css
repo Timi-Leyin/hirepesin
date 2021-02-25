@@ -1,3 +1,19 @@
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:  10px ;
+            background: #fff;
+
+}
+.opaque{
+    opacity: .5
+}
+.opaque a:hover{
+    opacity: 1
+}
 .footer ul{
 display: flex;
 justify-content: center;
@@ -5,7 +21,7 @@ list-style: none;
 }
 
 .footer ul li{
-padding:6px 10px;
+padding:0 7px;
 }
 
 .footer ul a{
@@ -17,10 +33,17 @@ transition: var(--timing-ease);
 color:var(--pry-color);
 cursor: pointer;
 }
+.footer .svg-inline--fa{
+padding: 0 10px;
+    height: 1.3rem;
+    width: 1.2rem;
+}
+
 
 
 #footer{
-    text-align: center;
-    padding: 10px;
-    background-color: #eee;
+padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
 }
+

@@ -19,6 +19,7 @@ function How(){
 <div class="_right">
 
 <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-delay="205">
+ <h2 class="fa fa-search"></h2>
   <h3>Search For Artisans</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
      Maxime, autem? Eum ab natus delectus accusamus molestias
@@ -27,6 +28,7 @@ function How(){
 </div>
 
 <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-delay="250">
+  <h2 class="fa fa-folder"></h2>
   <h3>Get Proposal</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
      Maxime, autem? Eum ab natus delectus accusamus molestias
@@ -35,6 +37,7 @@ function How(){
 </div>
 
 <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-delay="290">
+  <h2 class="fa fa-plus-square"></h2>
   <h3>Accept Proposal</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
      Maxime, autem? Eum ab natus delectus accusamus molestias
@@ -44,6 +47,7 @@ function How(){
 
 
 <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-delay="310">
+  <h2 class="fa fa-star"></h2>
   <h3>Get Your Work Done</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
      Maxime, autem? Eum ab natus delectus accusamus molestias

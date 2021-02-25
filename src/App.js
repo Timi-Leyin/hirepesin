@@ -1,27 +1,43 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './component/Header/Header';
-import Banner from './component/Banner/Banner';
-import Why from './component/WhyUs/WhyUs';
-import Process from './component/Process/Process';
-import How from './component/How/How';
-import   Footer  from './component/Footer/Footer';
-import GetStartedEmail from './context/GetStartedEmail';
+import Home from './pages/Home/Home';
 
+import Register from './pages/Register/Register';
+
+import Login from './pages/Login/Login';
+
+import Jobs from './pages/Jobs/Jobs';
+
+import Error from './pages/Error/Error';
+
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
-    console.log(React.useContext(GetStartedEmail))
   return (
-    <section className="body_container_root">
-      <Header />
-      <Banner />
-      <Why />
-      <Process />
-      <How />
-      <Footer />
+<Router>
+<Switch>
+        <Route path='/' exact component={Home} />
+      
+        <Route path='/home' component={Home} />
+      
+      <Route path='/register' component={Register} />
+      
+       <Route path='/login' component={Login} />
+             <Route path='/jobs' component={Jobs} />
+      <Route render={()=>{
+      return (
+      <Error />
+      )
+  } } />
+      
+       
+      
+      </Switch>
+      
+</Router>
 
-    </section>
   );
 }
 

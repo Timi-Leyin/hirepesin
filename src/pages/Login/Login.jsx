@@ -1,5 +1,5 @@
 import React,{Fragment, useContext} from 'react';
-import '../Login/Login.css';
+import './Login.css';
 import Email from '../../context/GetStartedEmail';
 import Footer from '../../component/Footer/Footer';
 import Logo from '../../component/Logo/Logo';
@@ -42,21 +42,11 @@ function Login(){
                 
                 <div class="input">
                     <label for="email">Email</label>
-                    <input type="email" name="email" value={decodeURIComponent(window.location.search).match(/(\w+)\@(\w+)\.(\w+){2}/ig)?decodeURIComponent(window.location.search).match(/(\w+)\@(\w+)\.(\w+){2}/ig)[0] : ''} id=""/>
+                    <input type="email" name="email"  id=""/>
                 </div>
                 
-                      
-                <div class="input">
-                    <label for="names">Full Name</label>
-                    <input type='text' name="full-name" id=""/>
-                </div>
-                
-                
-                      
-                <div class="input">
-                    <label for="referal">Referal Code (Optional) </label>
-                    <input type="text" name="referal" id=""/>
-                </div>
+            
+               
                 
                       
                 <div class="input">
@@ -64,24 +54,19 @@ function Login(){
                     <input type="password" name="password" id=""/>
                 </div>
                 
-                           
-                <div class="input">
-                    <label for="password">Confirm Password</label>
-                    <input type="password" class='streched' name="password-2" id=""/>
-                </div>
-                
+
                
                 
             </div>
              
                 <div class="submit-input">
-                    <button type="submit">Sign Up</button>
+                    <button type="submit">Login</button>
                     <div>
                         or
                     </div>
                     <div>
                         <button class='google-sign-in'>
-                           <i class="fab fa-google"></i> Sign Up With Google
+                           <i class="fab fa-google"></i> Login With Google
                         </button>
                     </div>
                     <a href="">Forgotten Password?</a>
