@@ -39,7 +39,7 @@ function Banner(){
       who are in need of services of arisans who are seeking for quick jobs.
     </p>
     <label for="email" className="error">Enter a valid Email Address</label>
-<form action="http://localhost:3000/login">
+<form action="http://localhost:3000/register">
     <div  id='get_started'>
     <input type="email" value={email} name="get-started-email" placeholder="Email Address" onInput={(e)=>{
             setEmail(getStartEmail=e.target.value)
